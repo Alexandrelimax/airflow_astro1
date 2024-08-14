@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 # URL = os.getenv('DATABASE_URL')
-URL = 'postgresql+psycopg2://myuser:mypassword@localhost:5432/mydatabase'
+URL = 'postgresql+psycopg2://myuser:mypassword@postgres:5433/mydatabase'
 class ConnectionPostgres:
     _instance = None
 

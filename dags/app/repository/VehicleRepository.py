@@ -1,6 +1,5 @@
 from sqlalchemy.exc import SQLAlchemyError
-from model.VehicleModel import Vehicle  
-
+from app.model.VehicleModel import Vehicle  
 
 
 class VehicleRepository:

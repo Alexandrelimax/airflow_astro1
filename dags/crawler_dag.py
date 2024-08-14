@@ -45,8 +45,8 @@ def process_and_save_data(**context):
     
     connection = ConnectionPostgres()
     repository = VehicleRepository(connection)
+    print(vehicle_data)
     repository.insert(vehicle_data)
-
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
